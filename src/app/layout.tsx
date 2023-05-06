@@ -1,7 +1,7 @@
 import "./globals.css";
 import { DM_Sans } from "next/font/google";
 
-const dmSans = DM_Sans({ weight: "500" });
+const dmSans = DM_Sans({ weight: ["400", "700"] });
 
 export const metadata = {
   title: "Create Next App",

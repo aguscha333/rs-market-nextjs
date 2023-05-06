@@ -7,6 +7,10 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontWeight: {
+      normal: 400,
+      bold: 700,
+    },
     colors: {
       primary: "#00031A",
       black: "#000000",

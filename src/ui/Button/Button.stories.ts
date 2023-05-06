@@ -7,6 +7,16 @@ const meta: Meta<typeof Button> = {
   title: "UI/Button",
   component: Button,
   tags: ["autodocs"],
+  argTypes: {
+    kind: { control: "select", defaultValue: "primary" },
+    size: { control: "select", defaultValue: "md" },
+    disabled: { control: "select", options: [true, false] },
+  },
+  parameters: {
+    docs: {
+      controls: { exclude: ["as", "ref", "wrapElement"] },
+    },
+  },
 };
 
 export default meta;
@@ -27,9 +37,25 @@ export const Outline: Story = {
   },
 };
 
-export const Large: Story = {
+export const PrimaryDisabled: Story = {
   args: {
-    size: "lg",
+    kind: "primary",
+    label: "Button",
+    disabled: true,
+  },
+};
+
+export const OutlineDisabled: Story = {
+  args: {
+    kind: "outline",
+    label: "Button",
+    disabled: true,
+  },
+};
+
+export const Fill: Story = {
+  args: {
+    size: "fill",
     label: "Button",
   },
 };

@@ -10,7 +10,7 @@ Object.defineProperty(nextImage, "default", {
   value: (props) => <img {...props} />,
 });
 
-const dmSans = DM_Sans({ weight: "500", subsets: ["latin"] });
+const dmSans = DM_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 
 const preview: Preview = {
   decorators: [
