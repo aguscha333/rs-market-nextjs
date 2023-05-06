@@ -11,10 +11,12 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@ariakit/react": "^0.1.7",
     "@types/node": "20.1.0",
     "@types/react": "18.2.5",
     "@types/react-dom": "18.2.4",
     "autoprefixer": "10.4.14",
+    "classnames": "^2.3.2",
     "eslint-config-airbnb-typescript": "^17.0.0",
     "eslint-config-next": "13.4.1",
     "next": "13.4.1",
