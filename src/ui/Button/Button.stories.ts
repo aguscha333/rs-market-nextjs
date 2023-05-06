@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import { MdExpandMore } from "react-icons/md";
 
 import Button from "./Button";
 
@@ -11,6 +12,7 @@ const meta: Meta<typeof Button> = {
     kind: { control: "select", defaultValue: "primary" },
     size: { control: "select", defaultValue: "md" },
     disabled: { control: "select", options: [true, false] },
+    icon: { control: "select", options: [undefined, MdExpandMore] },
   },
   parameters: {
     docs: {
@@ -64,5 +66,13 @@ export const Small: Story = {
   args: {
     size: "sm",
     label: "Button",
+  },
+};
+
+export const PrimaryWithIcon: Story = {
+  args: {
+    kind: "primary",
+    label: "Button",
+    icon: MdExpandMore,
   },
 };

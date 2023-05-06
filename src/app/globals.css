@@ -25,4 +25,10 @@ body {
   }
 
   /* text-base text-sm and text-xs already exist from tailwind */
+
+  a,
+  .link {
+    @apply text-link disabled:text-dark-grey hover:underline active:underline active:text-active p-1 rounded-lg;
+    @apply focus:outline-dashed focus:outline-focus focus:outline-2 focus:outline-offset-2;
+  }
 }
