@@ -32,6 +32,8 @@
         --disabled-foreground: 0, 0%, 39%;
         --disabled-border: 0, 0%, 77%;
 
+        --placeholder: 0, 0%, 46%;
+
         --destructive: 7, 78%, 47%;
         --destructive-foreground: 0 0% 100%;
 
