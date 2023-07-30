@@ -4,7 +4,7 @@ import { Label } from "./label";
 
 // More on how to set up stories at: https://storybook.js.org/docs/react/writing-stories/introduction
 const meta: Meta<typeof Label> = {
-  title: "UI/Label",
+  title: "UI/Form/Label",
   component: Label,
   tags: ["autodocs"],
   argTypes: {
