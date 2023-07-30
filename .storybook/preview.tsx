@@ -1,14 +1,7 @@
 import React from "react";
 import type { Preview } from "@storybook/react";
 import { DM_Sans } from "next/font/google";
-import "../src/app/globals.css";
-
-import * as nextImage from "next/image";
-
-Object.defineProperty(nextImage, "default", {
-  configurable: true,
-  value: (props) => <img {...props} />,
-});
+import "../app/globals.css";
 
 const dmSans = DM_Sans({ weight: ["400", "700"], subsets: ["latin"] });
 
